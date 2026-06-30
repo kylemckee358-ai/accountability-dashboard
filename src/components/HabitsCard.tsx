@@ -1,5 +1,5 @@
 interface Habit {
-  key: 'noSmoking' | 'noDrinking' | 'noTikTok'
+  key: 'noSmoking' | 'noDrinking' | 'noTikTok' | 'progressPhoto'
   label: string
   value: boolean
 }

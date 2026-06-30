@@ -24,6 +24,7 @@ export interface MetricValues {
   noSmoking: boolean
   noDrinking: boolean
   noTikTok: boolean
+  progressPhoto: boolean
 }
 
 export interface DailyLog {

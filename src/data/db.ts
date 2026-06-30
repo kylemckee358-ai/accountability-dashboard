@@ -22,6 +22,7 @@ export const DEFAULT_METRICS = (): import('@/types').MetricValues => ({
   noSmoking: false,
   noDrinking: false,
   noTikTok: false,
+  progressPhoto: false,
 })
 
 export function todayDate(): string {

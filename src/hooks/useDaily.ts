@@ -8,7 +8,7 @@ import { calcStreak } from '@/utils/progress'
 
 type SimpleMetricKey = 'water' | 'steps' | 'reading'
 type SetMetricKey = 'weight'
-type HabitKey = 'noSmoking' | 'noDrinking' | 'noTikTok'
+type HabitKey = 'noSmoking' | 'noDrinking' | 'noTikTok' | 'progressPhoto'
 type WorkoutKey = 'workoutIndoor' | 'workoutOutdoor'
 
 export function useDaily() {

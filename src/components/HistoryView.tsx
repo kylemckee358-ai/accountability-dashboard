@@ -23,6 +23,7 @@ const ROWS: { label: string; check: (l: DailyLog, g: GoalsConfig) => boolean }[]
   { label: 'No Smoking',      check: l      => l.metrics.noSmoking  === true },
   { label: 'No Drinking',     check: l      => l.metrics.noDrinking === true },
   { label: 'No TikTok',       check: l      => l.metrics.noTikTok   === true },
+  { label: 'Progress Photo',  check: l      => l.metrics.progressPhoto === true },
 ]
 
 export function HistoryView() {

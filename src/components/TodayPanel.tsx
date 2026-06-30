@@ -19,7 +19,7 @@ interface Props {
   onNextDay: () => void
   onAdd: (key: 'water' | 'steps' | 'reading', delta: number) => void
   onSetWeight: (val: number) => void
-  onHabit: (key: 'noSmoking' | 'noDrinking' | 'noTikTok', val: boolean) => void
+  onHabit: (key: 'noSmoking' | 'noDrinking' | 'noTikTok' | 'progressPhoto', val: boolean) => void
   onWorkout: (key: 'workoutIndoor' | 'workoutOutdoor', patch: Partial<WorkoutEntry>) => void
 }
 
@@ -61,9 +61,10 @@ export function TodayPanel({ log, goals, streak, isToday, viewDate, onPrevDay, o
           <WorkoutCard label="Workout — Outdoor" entry={outdoorEntry} options={OUTDOOR_OPTIONS} onChange={p => onWorkout('workoutOutdoor', p)} readOnly={!isToday} />
           <HabitsCard
             habits={[
-              { key: 'noSmoking',  label: 'No Smoking',  value: m?.noSmoking  ?? false },
-              { key: 'noDrinking', label: 'No Drinking', value: m?.noDrinking ?? false },
-              { key: 'noTikTok',   label: 'No TikTok',   value: m?.noTikTok   ?? false },
+              { key: 'noSmoking',     label: 'No Smoking',     value: m?.noSmoking     ?? false },
+              { key: 'noDrinking',    label: 'No Drinking',    value: m?.noDrinking    ?? false },
+              { key: 'noTikTok',      label: 'No TikTok',      value: m?.noTikTok      ?? false },
+              { key: 'progressPhoto', label: 'Progress Photo',  value: m?.progressPhoto ?? false },
             ]}
             onChange={onHabit}
             readOnly={!isToday}
